@@ -14,14 +14,14 @@ def quitApp():
 
 def main():
     action = {
-        'n' :newFile
+         'n' :newFile
         ,'o':openFile
         ,'s':saveFile
         ,'q':quitApp
     }
 
     ch = input('Enter n-new, o-open, s-save, q-quit:')
-
+    saveFile()
     if ch in action:
         action[ch]()
     else:
