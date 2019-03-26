@@ -9,7 +9,7 @@ def main():
     }    
 
     for idx, key in enumerate(app):
-        print(f'idx={idx} key={key}')
+        print(f'idx={idx}  key={key}')
         
 
 main()

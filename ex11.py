@@ -1,7 +1,7 @@
 #!/home/wizard/anaconda3/bin/python
 
 def main():
-    # 2 + 4 + ... + 98 + 100
+    #1 + 2 + 4 + ... + 98 + 100
     i = 1
     suma = 0
 
