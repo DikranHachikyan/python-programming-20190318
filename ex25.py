@@ -1,6 +1,7 @@
 #!/home/wizard/anaconda3/bin/python
 
 def sumNumbers(a, b, *args ):
+    """Add List of Numbers"""
     c = a + b
     for v in args:
         c += v
@@ -14,7 +15,7 @@ if __name__ == '__main__':
     res = sumNumbers(x,y)
     print(f'{x} + {y} = {res}')
 
-    res = sumNumbers(x,y,4,5,6,7,8)
+    res = sumNumbers(x,y, 4, 5, 6, 7, 8)
     print(f'Result 1:{res}')
 
     l1 = [ v for v in range(1,15)]
