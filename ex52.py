@@ -28,4 +28,4 @@ if __name__ == '__main__':
         print('x:', x)
 
     ls = list( map(lambda el: el**2, nums))
-    print('ls:',ls)
+    print('ls:',ls, ' nums:',nums)

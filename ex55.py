@@ -17,10 +17,10 @@ if __name__ == '__main__':
         b = int(input('value of b(int):'))
         print(f'{a} + {b} = {action[op](a,b)}')
 
-    except ValueError as e1:
-        print('Exception:',e1)
     except KeyError as e1:
-        print('Exception:', e1)
+        print('Key error:', e1)
+    except Exception as e1:
+        print('Exception:',e1)
     else:
         print('else part')
     finally:
