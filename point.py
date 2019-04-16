@@ -1,6 +1,3 @@
-#!/home/wizard/anaconda3/bin/python
-
-#Клас
 class Point:
     count = 0
     # Конструктор на класа- инициализира данните на класа
@@ -81,20 +78,14 @@ class Point:
 
     def draw(self):
         print(f'Draw Point: ({self.x},{self.y})')
+
+    @classmethod
+    def fromPoint(cls,p):
         
+        if not isinstance(p,cls):
+            raise TypeError(f'param must be {cls}')
+        return cls(p.x,p.y)
 
-if __name__ == '__main__':
-    p1 = Point(3, 4)
-    
-    p1.x = 10
-    p1.y = 12
-    print(f'P1:{p1}')
-
-    p2 = Point(1,2)
-    p3 = Point()
-
-    if eval(repr(p2)) == p2:
-        print('eval repr p2 == p2')
-
-    if p1 != p2:
-        print(f'{p1} <> {p2}')
+    # @staticmethod
+    # def foo():
+    #     draw()
