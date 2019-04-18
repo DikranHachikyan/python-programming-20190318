@@ -1,7 +1,7 @@
 #!/home/wizard/anaconda3/bin/python
 
-from point import Point
-from rectangle import Rectangle
+from draw import Point
+from draw import Rectangle
 from math import sqrt
 
 class ShapeUtils:

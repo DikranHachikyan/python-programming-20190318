@@ -1,7 +1,7 @@
 #!/home/wizard/anaconda3/bin/python
 
-from point import Point
-from shape import Shape
+from draw import Point
+from draw import Shape
 #Клас
 
 class Rectangle(Point,Shape):

@@ -1,6 +1,6 @@
 #!/home/wizard/anaconda3/bin/python
 
-from point import Point
+from draw import Point
 
 #Клас
 
